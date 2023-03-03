@@ -384,7 +384,7 @@ Swagger UIの実行
 踏み台ホストでChromeを起動し、 `http://10.1.1.5:8082/docs <http://10.1.1.5:8082/docs>`__ に接続してください
 
 
-.. image:: ./media/nginx-agent-swagger.jpg
+.. image:: ./media/nginx-agent-swagger.png
    :width: 500
 
 2. curl を使った Statusの確認
@@ -410,12 +410,12 @@ NGINX Agent が ``8081`` で待ち受けるREST APIに対してステータス�
 
 踏み台ホストでChromeを起動し、 Prometheus `http://10.1.1.5:9090 <http://10.1.1.5:9090>`__ に接続してください。正しく起動している場合、以下のような画面が表示されます
 
-.. image:: ./media/nginx-agent-prometheus-top.jpg
+.. image:: ./media/nginx-agent-prometheus-top.png
    :width: 500
 
 踏み台ホストでChromeを起動し、 Grafana `http://10.1.1.5:3000 <http://10.1.1.5:3000>`__ に接続してください。正しく起動している場合、以下のような画面が表示されます
 
-.. image:: ./media/nginx-agent-grafana-top.jpg
+.. image:: ./media/nginx-agent-grafana-top.png
    :width: 500
 
 以下の情報でログインします。初回時にパスワードを変更するよう促されますので適宜パスワードを指定してください
@@ -423,7 +423,7 @@ NGINX Agent が ``8081`` で待ち受けるREST APIに対してステータス�
 Top画面の下部に表示された ``NGINX Agent`` のダッシュボードをクリックするとステータスが取得できます。
 (すべての項目が表示されるまで5分ほど必要となります)
 
-.. image:: ./media/nginx-agent-grafana-dashboard.jpg
+.. image:: ./media/nginx-agent-grafana-dashboard.png
    :width: 500
 
 5. モックアプリケーションの起動
@@ -453,7 +453,7 @@ Top画面の下部に表示された ``NGINX Agent`` のダッシュボードを
 
 踏み台ホストでChromeを起動し、 `http://10.1.1.5:54790 <http://10.1.1.5:54790>`__ に接続してください
 
-.. image:: ./media/nginx-agent-gomochup.jpg
+.. image:: ./media/nginx-agent-gomochup.png
    :width: 500
 
 2. curl を使った Statusの確認
