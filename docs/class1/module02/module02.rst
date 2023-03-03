@@ -390,8 +390,8 @@ Swagger UIの実行
 2. curl を使った Statusの確認
 ----
 
-NGINX Agent が ``8081`` で待ち受けるREST APIに対してステータスを確認します
-
+NGINX Agent が ``8081`` で待ち受けるREST APIに対してステータスの確認が出来ます。
+参考情報は `Tips1. curｌによるNGINX Agent RESTの結果 <https://f5j-nginx-agent.readthedocs.io/en/latest/class1/module09/module09.html#tips1-curlnginx-agent-rest>`__ を参照してください。
 
 4. Grafana / Prometheus のインストール
 ====
@@ -432,7 +432,7 @@ Top画面の下部に表示された ``NGINX Agent`` のダッシュボードを
 1. インストール
 ----
 
-こちらのモックアプリケーションはGoを利用します。 `Goのインストール <>`__ の手順を参考にGoのインストールを行ってください
+こちらのモックアプリケーションはGoを利用します。 `Goのインストール <#go>`__ の手順を参考にGoのインストールを行ってください
 
 モックアプリケーションを実行します
 
@@ -458,3 +458,7 @@ Top画面の下部に表示された ``NGINX Agent`` のダッシュボードを
 
 2. curl を使った Statusの確認
 ----
+
+NGINX Agent が ``8081`` で待ち受けるREST APIに対してステータスの確認が出来ます。
+参考情報は `Tips2. curlによるモックアプリケーションの結果 <https://f5j-nginx-agent.readthedocs.io/en/latest/class1/module09/module09.html#tips1-curl>`__ を参照してください。
+

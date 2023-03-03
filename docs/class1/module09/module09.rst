@@ -1,7 +1,7 @@
 補足情報
 ####
 
-Tips1. curnによるNGINX Agent RESTの結果
+Tips1. curlによるNGINX Agent RESTの結果
 ====
 
 参考にNGINX Agentの情報をRESTで取得したサンプルを示します
@@ -13,7 +13,7 @@ Tips1. curnによるNGINX Agent RESTの結果
 .. code-block:: bash
   :caption: 実行結果サンプル
   :linenos:
-  
+
   # HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
   # TYPE go_gc_duration_seconds summary
   go_gc_duration_seconds{quantile="0"} 2.1421e-05
@@ -246,7 +246,7 @@ Tips1. curnによるNGINX Agent RESTの結果
   ]
 
 Tips2. curlによるモックアプリケーションの結果
-----
+====
 
 .. code-block:: cmdin
 
