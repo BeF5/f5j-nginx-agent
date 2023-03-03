@@ -391,7 +391,7 @@ Swagger UIの実行
 ----
 
 NGINX Agent が ``8081`` で待ち受けるREST APIに対してステータスの確認が出来ます。
-参考情報は `Tips1. curｌによるNGINX Agent RESTの結果 <https://f5j-nginx-agent.readthedocs.io/en/latest/class1/module09/module09.html#tips1-curlnginx-agent-rest>`__ を参照してください。
+参考情報は `Tips1. curｌによるNGINX Agent RESTの結果 <https://f5j-nginx-agent.readthedocs.io/en/latest/class1/module09/module09.html#tips1-curl>`__ を参照してください。
 
 4. Grafana / Prometheus のインストール
 ====
@@ -460,5 +460,5 @@ Top画面の下部に表示された ``NGINX Agent`` のダッシュボードを
 ----
 
 NGINX Agent が ``8081`` で待ち受けるREST APIに対してステータスの確認が出来ます。
-参考情報は `Tips2. curlによるモックアプリケーションの結果 <https://f5j-nginx-agent.readthedocs.io/en/latest/class1/module09/module09.html#tips1-curl>`__ を参照してください。
+参考情報は `Tips2. curlによるモックアプリケーションの結果 <https://f5j-nginx-agent.readthedocs.io/en/latest/class1/module09/module09.html#tips2-curl>`__ を参照してください。
 
