@@ -5,7 +5,7 @@
 ====
 
 -  事前にラボ環境へのInviteを行っておりますので、メールをご確認ください
--  利用するコマンド： git , jq , sudo, curl, openssl
+-  利用するコマンド： git, jq, sudo, curl, openssl
 -  NGINX Trialライセンスの取得、ラボ実施ユーザのHome Directoryへ配置
 
 ラボ環境 (UDF(Unified Demonstration Framework)) コンポーネントへの接続
@@ -14,7 +14,7 @@
 | 弊社が提供するラボ環境を使って動作を確認いただきます。
 | ラボ環境を起動する等、一部ブラウザを使って操作します。
 | Google ChromeがSupportブラウザとなります。その他ブラウザでは正しく動作しない場合があることご了承ください。
-| 参照：\ `UDF Supported Browsers and Clients <https://help.udf.f5.com/en/articles/3470266-supported-browsers-and-clients>`__
+| 参照： `UDF Supported Browsers and Clients <https://help.udf.f5.com/en/articles/3470266-supported-browsers-and-clients>`__
 
 
 ラボ環境構成図
