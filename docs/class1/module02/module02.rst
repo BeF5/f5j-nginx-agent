@@ -473,6 +473,6 @@ Top画面の下部に表示された ``NGINX Agent`` のダッシュボードを
 2. curl を使った Statusの確認
 ----
 
-モックアップアプリケーションが ``54790`` NGINX AgentにgRPCで接続し取得した情報の確認が出来ます。
+モックアップアプリケーションがNGINX Agentの ``54790`` にgRPCで接続し、取得した情報の確認が出来ます。
 参考情報は `Tips2. curlによるモックアプリケーションの結果 <https://f5j-nginx-agent.readthedocs.io/en/latest/class1/module09/module09.html#tips2-curl>`__ を参照してください。
 
