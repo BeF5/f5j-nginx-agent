@@ -46,7 +46,7 @@ Windows Jump HostからCLIの操作を行う場合、以下タブからRDP Clien
    
 Windows Jump Hostへログインいただくと、SSH
 Clientのショートカットがありますので、そちらをダブルクリックし
-``ubuntu01`` へ接続ください
+``ubuntu03 (10.1.1.5)`` へ接続ください
 
    - .. image:: ./media/putty_icon.jpg
       :width: 50

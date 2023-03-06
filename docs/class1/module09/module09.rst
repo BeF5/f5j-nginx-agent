@@ -11,7 +11,7 @@ Tips1. curlによるNGINX Agent RESTの結果
 
 .. code-block:: cmdin
 
-  curl -s http://10.1.1.7:8081/metrics/
+  curl -s http://10.1.1.5:8081/metrics/
 
 .. code-block:: bash
   :caption: 実行結果サンプル
@@ -132,7 +132,7 @@ Tips1. curlによるNGINX Agent RESTの結果
 
 .. code-block:: cmdin
 
-  curl -s http://10.1.1.7:8081/nginx/ | jq .
+  curl -s http://10.1.1.5:8081/nginx/ | jq .
 
 .. code-block:: bash
   :caption: 実行結果サンプル
@@ -259,7 +259,7 @@ Tips2. curlによるモックアプリケーションの結果
 
 .. code-block:: cmdin
 
-  curl -s http://10.1.1.7:54790/registered/ | jq .
+  curl -s http://10.1.1.5:54790/registered/ | jq .
 
 .. code-block:: bash
   :caption: 実行結果サンプル
@@ -506,7 +506,7 @@ Tips2. curlによるモックアプリケーションの結果
               {
                 "prefixlen": 24,
                 "netmask": "255.255.255.0",
-                "address": "10.1.1.7"
+                "address": "10.1.1.5"
               }
             ],
             "name": "ens5"
@@ -571,7 +571,7 @@ Tips2. curlによるモックアプリケーションの結果
 
 .. code-block:: cmdin
 
-  curl -s http://10.1.1.7:54790/nginxes/ | jq .
+  curl -s http://10.1.1.5:54790/nginxes/ | jq .
 
 .. code-block:: bash
   :caption: 実行結果サンプル
@@ -695,7 +695,7 @@ Tips2. curlによるモックアプリケーションの結果
 
 .. code-block:: cmdin
 
-  curl -s http://10.1.1.7:54790/configs/ | jq .
+  curl -s http://10.1.1.5:54790/configs/ | jq .
 
 .. code-block:: bash
   :caption: 実行結果サンプル
@@ -817,7 +817,7 @@ Tips2. curlによるモックアプリケーションの結果
 
 .. code-block:: cmdin
 
-  curl -s http://10.1.1.7:54790/configs/chunked/ | jq .
+  curl -s http://10.1.1.5:54790/configs/chunked/ | jq .
 
 .. code-block:: bash
   :caption: 実行結果サンプル
@@ -883,7 +883,7 @@ Tips2. curlによるモックアプリケーションの結果
 
 .. code-block:: cmdin
 
-  curl -s http://10.1.1.7:54790/configs/raw/ | jq .
+  curl -s http://10.1.1.5:54790/configs/raw/ | jq .
 
 .. code-block:: bash
   :caption: 実行結果サンプル
@@ -901,7 +901,7 @@ Tips2. curlによるモックアプリケーションの結果
 
 .. code-block:: cmdin
 
-  curl -s http://10.1.1.7:54790/metrics/ | jq .
+  curl -s http://10.1.1.5:54790/metrics/ | jq .
 
 .. code-block:: bash
   :caption: 実行結果サンプル
