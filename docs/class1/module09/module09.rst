@@ -6,6 +6,9 @@ Tips1. curlによるNGINX Agent RESTの結果
 
 参考にNGINX Agentの情報をRESTで取得したサンプルを示します
 
+/metrics
+----
+
 .. code-block:: cmdin
 
   curl -s http://10.1.1.7:8081/metrics/
@@ -123,6 +126,9 @@ Tips1. curlによるNGINX Agent RESTの結果
   # TYPE process_virtual_memory_max_bytes gauge
   process_virtual_memory_max_bytes 1.8446744073709552e+19
   
+
+/nginx
+----
 
 .. code-block:: cmdin
 
@@ -247,6 +253,9 @@ Tips1. curlによるNGINX Agent RESTの結果
 
 Tips2. curlによるモックアプリケーションの結果
 ====
+
+/registered
+----
 
 .. code-block:: cmdin
 
@@ -556,6 +565,10 @@ Tips2. curlによるモックアプリケーションの結果
     "dataplane_software_details": null
   }
 
+
+/nginxes
+----
+
 .. code-block:: cmdin
 
   curl -s http://10.1.1.7:54790/nginxes/ | jq .
@@ -677,6 +690,9 @@ Tips2. curlによるモックアプリケーションの結果
     }
   ]
 
+/configs
+----
+
 .. code-block:: cmdin
 
   curl -s http://10.1.1.7:54790/configs/ | jq .
@@ -796,6 +812,9 @@ Tips2. curlによるモックアプリケーションの結果
     }
   }
 
+/configs/chunked
+----
+
 .. code-block:: cmdin
 
   curl -s http://10.1.1.7:54790/configs/chunked/ | jq .
@@ -858,7 +877,10 @@ Tips2. curlによるモックアプリケーションの結果
       }
     }
   ]
-  
+
+/configs/raw
+----
+
 .. code-block:: cmdin
 
   curl -s http://10.1.1.7:54790/configs/raw/ | jq .
@@ -873,6 +895,9 @@ Tips2. curlによるモックアプリケーションの結果
     "/etc/nginx/mime.types": "\ntypes {\n    text/html                                        html htm shtml;\n    text/css                                         css;\n    text/xml                                         xml;\n    image/gif                                        gif;\n    image/jpeg                                       jpeg jpg;\n    application/javascript                           js;\n    application/atom+xml                             atom;\n    application/rss+xml                              rss;\n\n    text/mathml                                      mml;\n    text/plain                                       txt;\n    text/vnd.sun.j2me.app-descriptor                 jad;\n    text/vnd.wap.wml                                 wml;\n    text/x-component                                 htc;\n\n    image/avif                                       avif;\n    image/png                                        png;\n    image/svg+xml                                    svg svgz;\n    image/tiff                                       tif tiff;\n    image/vnd.wap.wbmp                               wbmp;\n    image/webp                                       webp;\n    image/x-icon                                     ico;\n    image/x-jng                                      jng;\n    image/x-ms-bmp                                   bmp;\n\n    font/woff                                        woff;\n    font/woff2                                       woff2;\n\n    application/java-archive                         jar war ear;\n    application/json                                 json;\n    application/mac-binhex40                         hqx;\n    application/msword                               doc;\n    application/pdf                                  pdf;\n    application/postscript                           ps eps ai;\n    application/rtf                                  rtf;\n    application/vnd.apple.mpegurl                    m3u8;\n    application/vnd.google-earth.kml+xml             kml;\n    application/vnd.google-earth.kmz                 kmz;\n    application/vnd.ms-excel                         xls;\n    application/vnd.ms-fontobject                    eot;\n    application/vnd.ms-powerpoint                    ppt;\n    application/vnd.oasis.opendocument.graphics      odg;\n    application/vnd.oasis.opendocument.presentation  odp;\n    application/vnd.oasis.opendocument.spreadsheet   ods;\n    application/vnd.oasis.opendocument.text          odt;\n    application/vnd.openxmlformats-officedocument.presentationml.presentation\n                                                     pptx;\n    application/vnd.openxmlformats-officedocument.spreadsheetml.sheet\n                                                     xlsx;\n    application/vnd.openxmlformats-officedocument.wordprocessingml.document\n                                                     docx;\n    application/vnd.wap.wmlc                         wmlc;\n    application/wasm                                 wasm;\n    application/x-7z-compressed                      7z;\n    application/x-cocoa                              cco;\n    application/x-java-archive-diff                  jardiff;\n    application/x-java-jnlp-file                     jnlp;\n    application/x-makeself                           run;\n    application/x-perl                               pl pm;\n    application/x-pilot                              prc pdb;\n    application/x-rar-compressed                     rar;\n    application/x-redhat-package-manager             rpm;\n    application/x-sea                                sea;\n    application/x-shockwave-flash                    swf;\n    application/x-stuffit                            sit;\n    application/x-tcl                                tcl tk;\n    application/x-x509-ca-cert                       der pem crt;\n    application/x-xpinstall                          xpi;\n    application/xhtml+xml                            xhtml;\n    application/xspf+xml                             xspf;\n    application/zip                                  zip;\n\n    application/octet-stream                         bin exe dll;\n    application/octet-stream                         deb;\n    application/octet-stream                         dmg;\n    application/octet-stream                         iso img;\n    application/octet-stream                         msi msp msm;\n\n    audio/midi                                       mid midi kar;\n    audio/mpeg                                       mp3;\n    audio/ogg                                        ogg;\n    audio/x-m4a                                      m4a;\n    audio/x-realaudio                                ra;\n\n    video/3gpp                                       3gpp 3gp;\n    video/mp2t                                       ts;\n    video/mp4                                        mp4;\n    video/mpeg                                       mpeg mpg;\n    video/quicktime                                  mov;\n    video/webm                                       webm;\n    video/x-flv                                      flv;\n    video/x-m4v                                      m4v;\n    video/x-mng                                      mng;\n    video/x-ms-asf                                   asx asf;\n    video/x-ms-wmv                                   wmv;\n    video/x-msvideo                                  avi;\n}\n",
     "/etc/nginx/nginx.conf": "# for NAP WAF\nload_module modules/ngx_http_app_protect_module.so;\n# for NAP DoS\nload_module modules/ngx_http_app_protect_dos_module.so;\n# for NJS\nload_module modules/ngx_http_js_module.so;\nload_module modules/ngx_stream_js_module.so;\nuser  nginx;\nworker_processes  auto;\n\nerror_log  /var/log/nginx/error.log notice;\npid        /var/run/nginx.pid;\n\n\nevents {\n    worker_connections  1024;\n}\n\n\nhttp {\n    include       /etc/nginx/mime.types;\n    default_type  application/octet-stream;\n\n    log_format  main  '$remote_addr - $remote_user [$time_local] \"$request\" '\n                      '$status $body_bytes_sent \"$http_referer\" '\n                      '\"$http_user_agent\" \"$http_x_forwarded_for\"';\n\n    access_log  /var/log/nginx/access.log  main;\n\n    sendfile        on;\n    #tcp_nopush     on;\n\n    keepalive_timeout  65;\n\n    #gzip  on;\n\n    include /etc/nginx/conf.d/*.conf;\n}\n\n\n# TCP/UDP proxy and load balancing block\n#\n#stream {\n    # Example configuration for TCP load balancing\n\n    #upstream stream_backend {\n    #    zone tcp_servers 64k;\n    #    server backend1.example.com:12345;\n    #    server backend2.example.com:12345;\n    #}\n\n    #server {\n    #    listen 12345;\n    #    status_zone tcp_server;\n    #    proxy_pass stream_backend;\n    #}\n#}\n"
   }
+
+/metrics
+----
 
 .. code-block:: cmdin
 

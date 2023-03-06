@@ -371,7 +371,7 @@ Swagger UIの実行
 
   cd ~/agent/
   make launch-swagger-ui
-  # 2回目以降は make launch-swagger-ui & でSwaggerUIを実行できます
+  # 2回目以降は make launch-swagger-ui & によりバックグラウンドでSwaggerUIを実行できます
 
 .. code-block:: bash
   :caption: 実行結果サンプル
@@ -391,10 +391,14 @@ Swagger UIの実行
 ----
 
 NGINX Agent が ``8081`` で待ち受けるREST APIに対してステータスの確認が出来ます。
-参考情報は `Tips1. curｌによるNGINX Agent RESTの結果 <https://f5j-nginx-agent.readthedocs.io/en/latest/class1/module09/module09.html#tips1-curl>`__ を参照してください。
+参考情報は `Tips1. curl によるNGINX Agent RESTの結果 <https://f5j-nginx-agent.readthedocs.io/en/latest/class1/module09/module09.html#tips1-curl>`__ を参照してください。
 
 4. Grafana / Prometheus のインストール
 ====
+
+NGINX Agent が提供する Metrics 情報を表示するためGrafanaを実行します
+
+.. code-block:: cmdin
 
   cd ~/f5j-nginx-agent-lab/docker-compose
   docker-compose -f docker-compose.yml up -d
@@ -441,7 +445,7 @@ Top画面の下部に表示された ``NGINX Agent`` のダッシュボードを
   cd ~/agent/
   go run sdk/examples/server.go
   # 初回は必要なファイルのダウンロードなどプログラムの実行に約1分かかります
-  # 2回目以降は go run sdk/examples/server.go & でSwaggerUIを実行できます
+  # 2回目以降は go run sdk/examples/server.go & によりバックグラウンドでモックアップアプリケーションを実行できます
 
 .. code-block:: bash
   :caption: 実行結果サンプル
@@ -456,9 +460,19 @@ Top画面の下部に表示された ``NGINX Agent`` のダッシュボードを
 .. image:: ./media/nginx-agent-gomochup.png
    :width: 500
 
+提供されている情報は以下となります
+
+- registered - マネージメントプレーンとして動作するモックアップに登録されているデータプレーンの情報を表示
+- nginxes - データプレーンのNGINXインスタンス情報のリスト表示
+- configs - マネージメントプレーンに送付されたProtobufペイロードのNGINX設定を表示
+- configs/chunked - マネージメントプレーンに送付された分割されたペイロードを表示
+- configs/raw - データプレーンに設定されている実際のNGINX設定を表示
+- metrics - マネージメントプレーンに送付されたメトリクスの情報を表示（REST APIで送付されるものと同じ)
+
+
 2. curl を使った Statusの確認
 ----
 
-NGINX Agent が ``8081`` で待ち受けるREST APIに対してステータスの確認が出来ます。
+モックアップアプリケーションが ``54790`` NGINX AgentにgRPCで接続し取得した情報の確認が出来ます。
 参考情報は `Tips2. curlによるモックアプリケーションの結果 <https://f5j-nginx-agent.readthedocs.io/en/latest/class1/module09/module09.html#tips2-curl>`__ を参照してください。
 
