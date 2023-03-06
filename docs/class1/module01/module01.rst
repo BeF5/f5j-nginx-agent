@@ -55,9 +55,3 @@ Clientのショートカットがありますので、そちらをダブルク�
       :width: 200
 
 
-
-
-NGINX セットアップガイド トップページ
-====
-
-`NGINX セットアップガイド・ラボガイド <https://f5j-tech-info.readthedocs.io/ja/latest/content03/content3.html>`__

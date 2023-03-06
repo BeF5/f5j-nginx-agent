@@ -14,7 +14,13 @@ F5 Labs - Index
 
 このラボではNGINX PlusでNGINX Agentを利用する方法について紹介いたします
 
-NGINX Agentは `GitHub nginx/agent <https://github.com/nginx/agent>`__ で管理をしています
+NGINX Agentは GitHub でソースコードを管理しています。
+
+各種情報は以下を参照してください。
+
+- `GitHub nginx/agent <https://github.com/nginx/agent>`__
+- `Docs NGINX Agent <https://docs.nginx.com/nginx-agent/>`__
+
 
 NGINX AgentはNGINX OSS、NGINX Plus インスタンスと合わせてご利用いただくソフトウェアです。以下のような機能を提供します
 
@@ -22,7 +28,15 @@ NGINX AgentはNGINX OSS、NGINX Plus インスタンスと合わせてご利用�
 - NGINXのパフォーマンスメトリクスやOSのメトリクスを取得し、それらをGrafanaなどから参照可能となるようAgentが公開します
 - NGINXのイベントに関する通知を行います
 
-その他詳細はGitHubのページを参照してください
+その他詳細はGitHub、NGINX Docsのページを参照してください
+
+
+NGINX セットアップガイド トップページ
+====
+
+NGINX のその他ラボガイドは以下を参照してください
+
+- `NGINX セットアップガイド・ラボガイド <https://f5j-tech-info.readthedocs.io/ja/latest/content03/content3.html>`__
 
 
 .. toctree::
