@@ -29,6 +29,9 @@ Windows Jump HostへのRDP接続
 
 Windows Jump HostからCLIの操作を行う場合、以下タブからRDP Clientファイルをダウンロードいただき接続ください
 
+.. NOTE::
+   端末のセキュリティ設定等により、RDPクライアントによる接続が出来ない場合、 `補足手順. Windows Jump HostへVNCで接続 <>`__ を参照してください
+
    .. image:: ./media/udf_jumpbox.png
       :width: 200
 
@@ -52,4 +55,42 @@ Clientのショートカットがありますので、そちらをダブルク�
    - .. image:: ./media/putty_menu.jpg
       :width: 200
 
+補足手順. Windows Jump HostへVNCで接続
+----
 
+vnc-windowsの ``vnc-win`` をクリックしてください
+
+   .. image:: ./media/udf_vnc_jumpbox.png
+      :width: 200
+
+``接続`` をクリックしてください
+
+   .. image:: ./media/udf_vnc_jumpbox2.png
+      :width: 200
+
+パスワードが求められます。 ``admin`` と入力してください
+
+   .. image:: ./media/udf_vnc_jumpbox3.png
+      :width: 200
+
+Windowsのログイン画面が表示されます。VNCのメニューより、 ``Ctrl+Alt+Delを送信`` をクリックします
+
+   .. image:: ./media/udf_vnc_jumpbox4.png
+      :width: 200
+
+適切なユーザを選択し、パスワードを入力してください。ログインの情報は `Windows Jump HostへのRDP接続 <>`__ のパスワード情報を ``キーボードで入力`` し、ログインしてください
+
+   .. image:: ./media/udf_vnc_jumpbox5.png
+      :width: 200
+
+初期状態では、画面の解像度が低い値の場合があります。以下手順を参考に環境にあわせて解像度を変更してください
+デスクトップで右クリックから ``Display Settings`` を選択
+
+   .. image:: ./media/udf_vnc_display.png
+      :width: 200
+
+   .. image:: ./media/udf_vnc_display2.png
+      :width: 200
+
+   .. image:: ./media/udf_vnc_display3.png
+      :width: 200
