@@ -24,11 +24,14 @@
       :width: 400
 
 
-1a. Windows Jump HostへのRDP接続
+RDP接続
 ----
 
+a. Windows Jump HostへのRDP接続
+~~~~
+
 .. NOTE::
-   端末のセキュリティ設定等により、RDPクライアントによる接続が出来ない場合、 `1b. Windows Jump HostへVNCで接続 <#windows-jump-hostvnc>`__ を参照してください
+   端末のセキュリティ設定等により、RDPクライアントによる接続が出来ない場合、 `1b. Windows Jump HostへVNCで接続 <#b-windows-jump-hostvnc>`__ を参照してください
 
 
 Windows Jump HostからCLIの操作を行う場合、以下タブからRDP Clientファイルをダウンロードいただき接続ください
@@ -46,8 +49,10 @@ Windows Jump HostからCLIの操作を行う場合、以下タブからRDP Clien
    - .. image:: ./media/udf_jumpbox_loginuser2.png
        :width: 200
 
-1b. Windows Jump HostへVNCで接続
-----
+
+b. Windows Jump HostへVNCで接続
+~~~~
+
 
 vnc-windowsの ``vnc-win`` をクリックしてください
 
@@ -69,7 +74,7 @@ Windowsのログイン画面が表示されます。VNCのメニューより、 
    .. image:: ./media/udf_vnc_jumpbox4.png
       :width: 200
 
-適切なユーザを選択し、パスワードを ``キーボードで入力`` してください。ログインの情報は `1a. Windows Jump HostへのRDP接続 <#windows-jump-hostrdp>`__ のパスワード情報を確認してください
+適切なユーザを選択し、パスワードを ``キーボードで入力`` してください。ログインの情報は `1a. Windows Jump HostへのRDP接続 <#a-windows-jump-hostrdp>`__ のパスワード情報を確認してください
 
    .. image:: ./media/udf_vnc_jumpbox5.png
       :width: 200
@@ -86,7 +91,7 @@ Windowsのログイン画面が表示されます。VNCのメニューより、 
    - .. image:: ./media/udf_vnc_display3.png
       :width: 200
 
-2. SSHの接続
+SSHの接続
 ----
 
 Windows Jump Hostへログインいただくと、SSH
