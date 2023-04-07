@@ -27,12 +27,11 @@
 Windows Jump HostへのRDP接続
 ----
 
-Windows Jump HostからCLIの操作を行う場合、以下タブからRDP Clientファイルをダウンロードいただき接続ください
-
 .. NOTE::
    端末のセキュリティ設定等により、RDPクライアントによる接続が出来ない場合、 `補足手順. Windows Jump HostへVNCで接続 <#windows-jump-hostvnc>`__ を参照してください
 
 
+Windows Jump HostからCLIの操作を行う場合、以下タブからRDP Clientファイルをダウンロードいただき接続ください
 
    .. image:: ./media/udf_jumpbox.png
       :width: 200
