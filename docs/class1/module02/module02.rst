@@ -350,7 +350,7 @@ NGINX Agent及びMockアプリケーションはGoを利用します。
 
 インストール手順はGoのマニュアルを参照しています
 
-- `Swagger Installs <https://goswagger.io/install.html>`__
+- `Swagger Installs <http://goswagger.io/go-swagger/install/install-source/>`__
 
 .. NOTE::
 
