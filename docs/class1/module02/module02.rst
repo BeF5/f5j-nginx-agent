@@ -50,7 +50,7 @@ NGINX Agent及びMockアプリケーションはGoを利用します。
 
 .. NOTE::
 
-  こちらの手順は Go 1.20.1 のインストール手順となります
+  こちらの手順は Go 1.23.1 のインストール手順となります
 
 以下手順を参考にインストールします
 
@@ -58,10 +58,10 @@ NGINX Agent及びMockアプリケーションはGoを利用します。
 
   sudo su -
   # ファイルの取得
-  wget https://go.dev/dl/go1.20.1.linux-amd64.tar.gz
+  wget https://go.dev/dl/go1.23.1.linux-amd64.tar.gz
 
   # ファイルの展開
-  rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.1.linux-amd64.tar.gz
+  rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.1.linux-amd64.tar.gz
   
   # PATHの設定
   export PATH=$PATH:/usr/local/go/bin
@@ -76,7 +76,7 @@ NGINX Agent及びMockアプリケーションはGoを利用します。
   :caption: 実行結果サンプル
   :linenos:
 
-  go version go1.20.1 linux/amd64
+  go version go1.23.1 linux/amd64
 
 4. makeのインストール
 ----
@@ -354,7 +354,7 @@ NGINX Agent及びMockアプリケーションはGoを利用します。
 
 .. NOTE::
 
-  こちらの手順は Go 1.20.1 のインストール手順となります
+  こちらの手順は Go 1.23.1 のインストール手順となります
 
 以下手順を参考にインストールします
 
