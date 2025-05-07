@@ -2,7 +2,7 @@ NGINX Plus の設定
 ####
 
 NGINX Plusをインストールしたホストに対し、NGINX Agentをインストールし動作を確認します。
-UDF環境で動作する場合、 ``ubuntu03 (10.1.1.5)`` で操作することを想定しています
+UDF環境で動作する場合、 ``ubuntu03 (10.1.1.9)`` で操作することを想定しています
 
 ドキュメントは以下のページの内容を参照しています
 
@@ -381,7 +381,7 @@ Swagger UIの実行
   go run github.com/go-swagger/go-swagger/cmd/swagger serve ./docs/swagger.json -F=swagger --port=8082 --no-open
   2023/03/03 17:09:42 serving docs at http://localhost:8082/docs
 
-踏み台ホストでChromeを起動し、 `http://10.1.1.5:8082/docs <http://10.1.1.5:8082/docs>`__ に接続してください
+踏み台ホストでChromeを起動し、 `http://10.1.1.9:8082/docs <http://10.1.1.9:8082/docs>`__ に接続してください
 
 
 .. image:: ./media/nginx-agent-swagger.png
@@ -412,12 +412,12 @@ NGINX Agent が提供する Metrics 情報を表示するためGrafanaを実行�
 |Prometheus|9090  |
 +----------+------+
 
-踏み台ホストでChromeを起動し、 Prometheus `http://10.1.1.5:9090 <http://10.1.1.5:9090>`__ に接続してください。正しく起動している場合、以下のような画面が表示されます
+踏み台ホストでChromeを起動し、 Prometheus `http://10.1.1.9:9090 <http://10.1.1.9:9090>`__ に接続してください。正しく起動している場合、以下のような画面が表示されます
 
 .. image:: ./media/nginx-agent-prometheus-top.png
    :width: 500
 
-踏み台ホストでChromeを起動し、 Grafana `http://10.1.1.5:3000 <http://10.1.1.5:3000>`__ に接続してください。正しく起動している場合、以下のような画面が表示されます
+踏み台ホストでChromeを起動し、 Grafana `http://10.1.1.9:3000 <http://10.1.1.9:3000>`__ に接続してください。正しく起動している場合、以下のような画面が表示されます
 
 .. image:: ./media/nginx-agent-grafana-top.png
    :width: 500
@@ -455,7 +455,7 @@ Top画面の下部に表示された ``NGINX Agent`` のダッシュボードを
   INFO[0000] http listening
   INFO[0000] gRPC listening
 
-踏み台ホストでChromeを起動し、 `http://10.1.1.5:54790 <http://10.1.1.5:54790>`__ に接続してください
+踏み台ホストでChromeを起動し、 `http://10.1.1.9:54790 <http://10.1.1.9:54790>`__ に接続してください
 
 .. image:: ./media/nginx-agent-gomochup.png
    :width: 500
